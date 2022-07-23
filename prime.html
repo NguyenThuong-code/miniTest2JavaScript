@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sum Prime Smaller 500</title>
+</head>
+
+<body>
+<h3>Sum Prime Number Smaller than 500</h3>
+<script>
+    let arr=[];
+    let sum =0;
+    for(let i =1; i<500; i++){
+        if(isPrime(i)==false){
+        arr.push(i)
+        }
+    }
+    console.log(arr)
+    function calculateSum(){
+        for(let i = 0; i<arr.length;i++){
+            sum+=arr[i];
+        }
+        return sum
+    }
+    let result = calculateSum();
+    document.write(result);
+    function isPrime(n){
+        let check = false;
+        if(n==1)
+        check = true;
+        for(let i = 2; i <n; i++){
+            if(n%i ==0){
+            check= true
+            }
+        }
+        return check;
+    }
+
+</script>
+</body>
+
+</html>

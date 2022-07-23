@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Count Odd Number In Array</title>
+</head>
+
+<body>
+    <h3>Count Number Odd in Array</h3>
+<script>
+    let a = [5,5,6,9,8,5,2,4]
+    let count =0;
+    function countNumber(){
+    for(let i =0;i <a.length;i++ ){
+        if(a[i]%2==0){
+            count++;
+        }
+    }
+    return count; 
+    }
+    let result = countNumber();
+    document.write(result)
+</script>
+</body>
+
+</html>
